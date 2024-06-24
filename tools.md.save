@@ -1,0 +1,13 @@
+#Overclock
+cd tools && cd RyzenAdj && cd build && sudo ./ryzenadj --vrmmax-current=35000 --min-gfxclk=800 --max-gfxclk=1250 --tctl-temp=91
+ --stapm-limit=30000 --fast-limit=30000 --slow-limit=30000    
+
+
+##MODIFICAR WIFI 
+#Aumentar potencia de covertura red
+sudo iwconfig wlan0 txpower 150
+#Aumentar potencia de transferencia red
+sudo iwconfig wlan0 rate 40Mo   
+    
+#Subir volumen
+pactl set-sink-volume 0 160%
